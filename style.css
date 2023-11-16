@@ -44,6 +44,8 @@ pre {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     width: fit-content;
+    max-width: calc(100% - 2rem);
+    overflow: auto;
 }
 pre::before {
     content: "Console Output: \A\A";
