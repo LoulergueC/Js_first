@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 body {
     font-family: "Hanken Grotesk";
-    margin: 2rem;
+    margin: 5rem;
 }
 h1,
 h2,
@@ -17,11 +17,31 @@ h1 {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 440px) {
+    h1 {
+        font-size: 2rem;
+    }
+    section h2 span {
+        padding: 0 0.5rem !important;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 section h2 {
     position: relative;
+    width: 100%;
+    text-align: center;
 }
 section h2 span {
-    margin-left: 1rem;
     background-color: white;
     position: relative;
     z-index: 1;
@@ -36,6 +56,10 @@ section h2 hr {
     transform: translateY(-50%);
     margin: 0;
     z-index: 0;
+}
+section > p,
+section > div {
+    max-width: 650px;
 }
 
 pre {
