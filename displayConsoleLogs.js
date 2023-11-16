@@ -3,7 +3,15 @@ function displayConsoleLogs() {
     let script_id = this.getAttribute("data-id");
     let output = eval(script_id + "()");
 
-    document.getElementById(script_id).innerHTML = output;
+    let pre = document.getElementById(script_id);
+    pre.innerHTML = output;
+    pre.innerHTML =
+        "<span class='line'>" +
+        pre.textContent
+            .split("\n")
+            .filter(Boolean)
+            .join("</span>\n<span class='line'>") +
+        "</span>";
 
     console.log(output);
 }

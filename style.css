@@ -46,8 +46,12 @@ pre {
     width: fit-content;
 }
 pre::before {
-    content: "Console Output: \A\A > ";
+    content: "Console Output: \A\A";
     white-space: pre;
+    opacity: 0.7;
+}
+pre span.line::before {
+    content: "> ";
     opacity: 0.7;
 }
 button {
