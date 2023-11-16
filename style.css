@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+body {
+    font-family: "Hanken Grotesk";
+    margin: 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+}
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+section h2 {
+    position: relative;
+}
+section h2 span {
+    margin-left: 1rem;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 0 1rem;
+}
+section h2 hr {
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    margin: 0;
+    z-index: 0;
+}
+
+pre {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: fit-content;
+}
+pre::before {
+    content: "Console Output: \A\A > ";
+    white-space: pre;
+    opacity: 0.7;
+}
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #333;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
