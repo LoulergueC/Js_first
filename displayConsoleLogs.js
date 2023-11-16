@@ -17,5 +17,7 @@ function displayConsoleLogs() {
 }
 buttons = document.getElementsByTagName("button");
 for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", displayConsoleLogs);
+    if (i != 7) {
+        buttons[i].addEventListener("click", displayConsoleLogs);
+    }
 }
